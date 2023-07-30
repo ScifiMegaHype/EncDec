@@ -7,7 +7,6 @@ To install package: pip install -i https://test.pypi.org/simple/ enc-dec-by-mega
 # Test
 
 original = 'Fire is an animal=+TiPi never remembers?/...'
-
 print(f'Original: {original}')
 
 print(f'\nEncryptedv1: {encsimple(original)}')
