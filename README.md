@@ -1,6 +1,7 @@
 # EncDec
 
 'A package that allows to encrypt and decrypt string data using a unique key of your choice. Gives developers more control over their encryption'
+To install package: pip install -i https://test.pypi.org/simple/ enc-dec-by-mega==0.0.2
 
 # Test
 
