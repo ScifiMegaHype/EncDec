@@ -27,6 +27,9 @@ Here is a simple example:
 Bug report:
 
 .. code-block:: python
+
    toPrint = enccomplex(original,key='12')
    print('\nEncryptedv2:', toPrint)
    print('Decryptedv2:', deccomplex(toPrint,key='kl'))
+
+
