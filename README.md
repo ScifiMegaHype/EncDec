@@ -1,17 +1,25 @@
-# EncDec
+EncDec
+==========
 
-'A package that allows to encrypt and decrypt string data using a unique key of your choice. Gives developers more control over their encryption'
+**EncDec** is a package that allows users to encrypt and decrypt string data using a unique key of your choice. 
 
-To install package: pip install -i https://test.pypi.org/simple/ enc-dec-by-mega==0.0.2
+Here is a simple example:
 
-# Test
+.. code-block:: python
 
-original = 'Fire is an animal=+TiPi never remembers?/...'
-print(f'Original: {original}')
+   from encdec_sfmh.encdec import *
 
-print(f'\nEncryptedv1: {encsimple(original)}')
-print(f'Decryptedv1: {decsimple(encsimple(original))}')
+   original = 'rusksarenice'
 
-toPrint = enccomplex(original, 0)
-print('\nEncryptedv2:', toPrint)
-print('Decryptedv2:', deccomplex(toPrint, 0))
+   print(f'Original: {original}')
+
+   # Keyless encryption and decryption
+   print(f'\nEncryptedv1: {encsimple(original)}')
+   print(f'Decryptedv1: {decsimple(encsimple(original))}')
+
+   # Complex encryption and decryption with a key
+   toPrint = enccomplex(original,key='coffee')
+   print('\nEncryptedv2:', toPrint)
+   print('Decryptedv2:', deccomplex(toPrint,key='coffee'))
+
+**Giving developers more control over their encryptions**
