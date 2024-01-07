@@ -40,18 +40,3 @@ def deccomplex(word, key=0):
     keyhere = [x for x in str(key)]
     return ''.join(list(chr(ord(x) + shift - (len(word)%(i+1)) - ord(keyhere[i%(len(keyhere))])%2) for i, x in enumerate(word))) 
     
-
-'''
-# Test
-
-original = 'Fire is an animal=+TiPi never remembers?/...'
-
-print(f'Original: {original}')
-
-print(f'\nEncryptedv1: {encsimple(original)}')
-print(f'Decryptedv1: {decsimple(encsimple(original))}')
-
-toPrint = enccomplex(original)
-print('\nEncryptedv2:', toPrint)
-print('Decryptedv2:', deccomplex(toPrint))
-'''
