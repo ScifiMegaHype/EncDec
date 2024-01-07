@@ -23,3 +23,9 @@ Here is a simple example:
    print('Decryptedv2:', deccomplex(toPrint,key='coffee'))
 
 **Giving developers more control over their encryptions**
+
+Bug report:
+
+toPrint = enccomplex(original,key='12')
+print('\nEncryptedv2:', toPrint)
+print('Decryptedv2:', deccomplex(toPrint,key='kl'))
